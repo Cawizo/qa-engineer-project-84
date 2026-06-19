@@ -13,18 +13,9 @@ results:
   - test-case:
     status:
 
-- summary: |
-    Просмотр подробной информации о товаре
-  status: pass
-  
-- summary: |
-    Добавление товара в корзину
-  status: pass
+  - test-case:
+    status:
 
-- summary: |
-    Просмотр содержимого корзины
-  status: pass
+  - test-case:
+    status:
 
-- summary: |
-    Сайт должен иметь мобильную версию
-  status: fail
