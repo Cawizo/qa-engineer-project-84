@@ -1,11 +1,17 @@
 ---
-- summary: |
-    Проверка поиска товара по ключевому слову
-  status: pass
+report:
+  id: TR-001
+  date: 2026-06-19
+  environment: "Yandex, 26.4.5.634 (64-bit)"
+summary:
+  total:
+  passed:
+  failed:
+  blocked:
 
-- summary: |
-    Проверка поиска товара по категории
-  status: pass
+results:
+  - test-case:
+    status:
 
 - summary: |
     Просмотр подробной информации о товаре
