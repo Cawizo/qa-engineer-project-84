@@ -11,3 +11,21 @@
     Все эелементы страницы должны корректно отображаться
   actual-result: |
     Элементы страницы "наезжают" друг на друга
+---
+- id: 
+  summary: 
+  severity:            # blocker | critical | major | minor | trivial
+  priority:             # low | medium | high
+  status:                # open | in-progress | fixed | verified | closed | rejected
+  steps-to-reproduce: |
+    
+  expected-result: |
+    Фильтр сохраняется при переходе между страницами.
+    В запросе передаются и skip, и параметры фильтра.
+  actual-result: |
+    Фильтр сбрасывается, выводятся все товары.
+    В запросе products?skip=30 отсутствуют параметры фильтра.
+  related:
+    test-case:         # какой кейс выявил баг
+  attachments:
+    - network-skip30.png      # доказательства
