@@ -1,31 +1,33 @@
 ---
 - summary: |
-    Некорректно отображается мобильная версия приложения
+    Не работает восстановление пароля
   environment: |
-    Yandex Browser	26.46 (64-bit)
-    Realme UI 5.0
-    Android OS 14
+    Google Chrome	107.0.5304.121 (Официальная сборка) (64 бит)
+    ОС Linux 22.04
   steps-to-reproduce: |
-    1. Зайти на страницу https://products-store.hexlet.app/
+    1. Зайти на страницу логина https://runit.hexlet.ru/login
+    2. Нажать ссылку "не помню пароль"
+    3. Ввести почту и нажать "Восстановить пароль"
   expected-result: |
-    Все эелементы страницы должны корректно отображаться
+    На странице формы будет сообщение с просьбой проверить почту.
+    На почту придет письмо со ссылкой на восстановление пароля.
   actual-result: |
-    Элементы страницы "наезжают" друг на друга
----
-- id: 
-  summary: 
-  severity:            # blocker | critical | major | minor | trivial
-  priority:             # low | medium | high
-  status:                # open | in-progress | fixed | verified | closed | rejected
+    На странице ничего не происходит.
+    В консоли браузера в Devtools выводится почта
+
+- summary: |
+    Изменяется url в адресной строке браузера, не работают вкладки LOBBY/TOURNAMENT/COMPLETED GAMES
+  environment: |
+    Google Chrome	107.0.5304.121 (Официальная сборка) (64 бит)
+    ОС Linux
   steps-to-reproduce: |
-    
+    1. Залогиниться в системе https://codebattle.hexlet.io/session/new?locale=en&next=%2F
+    2. Переключить Лидерборд по сроку (месяц/неделя/за все время)
+    3. Переключить LOBBY/TOURNAMENT/COMPLETED GAMES
   expected-result: |
-    Фильтр сохраняется при переходе между страницами.
-    В запросе передаются и skip, и параметры фильтра.
+    url в адресной строке не меняется
+    Вкладки работают
   actual-result: |
-    Фильтр сбрасывается, выводятся все товары.
-    В запросе products?skip=30 отсутствуют параметры фильтра.
-  related:
-    test-case:         # какой кейс выявил баг
-  attachments:
-    - network-skip30.png      # доказательства
+    При нажатии на week,month,all в urlHash появляется '!'
+    Вкладки не работают.
+    Ошибка изображена на скриншоте assets/bug.png
