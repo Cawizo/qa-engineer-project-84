@@ -1,21 +1,9 @@
 ---
-report:
-  id: TR-001
-  date: 2026-06-19
-  environment: "Yandex, 26.4.5.634 (64-bit)"
-summary:
-  total:
-  passed:
-  failed:
-  blocked:
+- summary: |
+    TC-000
+    Краткое описание тест кейса. Пример: Проверка входа пользователя с существующими логином и паролем
+  status: pass
 
-results:
-  - test-case:
-    status:
-
-  - test-case:
-    status:
-
-  - test-case:
-    status:
-
+- summary: |
+    Краткое описание тест кейса. Пример: Проверка входа пользователя с существующими логином и паролем
+  status: fail
