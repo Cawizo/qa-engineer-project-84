@@ -305,7 +305,7 @@
   requirement: |
     При открытии страницы магазина с телефона пользователю должна быть
     доступна мобильная версия сайта
-  prerequisites: Телефон Iphone SE 375x667, либо любой другой телефон с шириной до 440
+  prerequisites: Сайт открыт с телефона
   test-data: N/A
   steps:
     - Переходим на сайт https://products-store.hexlet.app/
