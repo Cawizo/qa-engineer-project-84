@@ -118,7 +118,7 @@
 
 - summary: |
     TC-022
-    Визуальная ошибка дропдаун смены языка
+    Нет иконки флага и дважды пишется слово English
   environment: |
     Yandex Browser 26.4.5.634 (64-bit)
     OC Windows 11
